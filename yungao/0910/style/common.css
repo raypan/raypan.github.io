@@ -210,11 +210,6 @@ ul {
 .comment_box{
     position: relative;
 }
-.comment_box i{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 .comment_list{
 }
 .comment_list li{
@@ -230,7 +225,7 @@ ul {
     -webkit-box-sizing: border-box;
 }
 .comment_content{
-    margin-left: 30%;
+    margin-left: 25%;
     width: 75%;
     overflow: hidden;
 }
