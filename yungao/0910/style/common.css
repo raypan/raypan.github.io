@@ -193,7 +193,7 @@ ul {
 .oneline > li{
     float: left;
     padding: 0 2px 2px 0;
-    width: 12.5%;
+    width: 14%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -211,22 +211,23 @@ ul {
     position: relative;
 }
 .comment_list{
+    margin-left: 14%;
 }
 .comment_list li{
+    overflow: hidden;
     position: relative;
     margin-bottom: 5px;
 }
 .comment_list li img{
-    position: absolute;
-    left: 12.5%;
-    width: 12.5%;
+    float: left;
+    width: 15%;
     padding: 0 2px 2px 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 .comment_content{
-    margin-left: 25%;
-    width: 75%;
+    float: left;
+    width: 85%;
     overflow: hidden;
 }
 .split{
