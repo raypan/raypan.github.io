@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+body{
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+i {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.oh{
+    overflow: hidden;
+}
+.download_box{
+    background-color: #eef1fa;
+    padding: 10px;
+}
+.cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.yg_logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-right: 10px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 45px 45px;
+    -webkit-background-size: 45px;
+    background-color: #22528e;
+}
+.star{
+    width: 10px;
+    height: 10px;
+    background: url(../images/star.jpg) no-repeat;
+    background-size: 10px 10px;
+    -webkit-background-size: 10px 10px;
+}
+.download_box p{
+    color: #999;
+    font-size: 13px;
+}
+.download_box .left{
+    display: inline-block;
+}
+.download_box .right{
+    margin-top: 10px;
+}
+.download_btn{
+    color: #fff;
+    font-size: 15px;
+    background-color: #ff6d00;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+ }
+
+.timeline_list{
+    padding: 10px;
+    background-color: #fff;
+}
+.timeline_item{
+    padding: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.timeline_item .avatar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-size: 45px 45px;
+    -webkit-background-size: 45px;
+}
+.content_box{
+    padding-left: 40px;
+    font-size: 14px;
+    color: gray;
+}
+.content_box p{
+    margin: 5px 0;
+}
+.highlight{
+    color: #006699;
+}
+.right{
+    float: right;
+}
+.nickname{
+    font-size: 17px;
+}
+.label{
+    padding: 2px;
+    color: #fff;
+}
+.green{
+    background-color: #00CC66;
+}
+.lightgreen{
+    background-color: #00FF66;
+}
+.content_box .title a{
+    color: #0099CC;
+    font-size: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: solid 1px #0099CC;
+}
+.content_box .words{
+    margin: 5px 0;
+    color: #000;
+    font-size: 17px;
+    line-height: 1.4em;
+}
+.photo_box li{
+    float: left;
+    width: 33.3%;
+    padding: 0 3px 3px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.photo_box li img{
+    width: 100%;
+}
+.pos{
+    margin-left: 10px;
+}
+.option_box{
+    margin: 15px 0;
+}
+.option_box li{
+    display: block;
+    float: right;
+    margin-left: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: solid #ddd 1px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.icon_like{
+    background: url(../images/dianzan_@2x.png) no-repeat;
+}
+.on .icon_like{
+    background: url(../images/dianzan_down_@2x.png) no-repeat;
+}
+.icon_share{
+    background: url(../images/fenxiang_@2x.png) no-repeat;
+}
+.icon_comment{
+    background: url(../images/pinglun_@2x.png) no-repeat;
+}
+.option_box li i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px !important;
+    -webkit-background-size: 15px 15px !important;
+}
+.option_box li .num{
+    font-size: 15px;
+}
+.on .num{
+    color: #0099FF;
+}
+.extra_box{
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 5px;
+}
+.oneline{
+    margin: 5px 0;
+}
+.oneline > li{
+    float: left;
+    padding: 0 2px 2px 0;
+    width: 12.5%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.extra_box i{
+    margin: 5px 0 0 5px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px !important;
+    -webkit-background-size: 20px 20px !important;
+}
+.oneline li img{
+    width: 100%;
+}
+.comment_box{
+    position: relative;
+}
+.comment_box i{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.comment_list{
+}
+.comment_list li{
+    position: relative;
+    margin-bottom: 5px;
+}
+.comment_list li img{
+    position: absolute;
+    left: 12.5%;
+    width: 12.5%;
+    padding: 0 2px 2px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.comment_content{
+    margin-left: 25%;
+    width: 75%;
+    overflow: hidden;
+}
+.split{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: #888;
+    font-size: 17px;
+    padding: 10px;
+}
+.comment_content p{
+    font-size: 15px;
+    color: #000000;
+}
+.big_btn{
+    padding: 10px;
+}
+.big_btn a{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #FF6600;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.topic{
+    overflow: hidden;
+}
+.topic_box{
+    position: relative;
+    padding: 20px;
+}
+.topic_box img{
+    position: absolute;
+    width: 66px;
+    height: 66px;
+}
+.topic_box .content{
+    margin-left: 76px;
+    color: #fff;
+    font-size: 17px;
+}
+.topic_box .content a{
+    display: inline-block;
+    color: #fff;
+    margin: 10px 0;
+    background-color: #FF6600;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.blur {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    -webkit-filter: blur(6px); /* Chrome, Opera */
+    -moz-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(6px);
+}
+.column_box{
+    display: box;
+    display: -webkit-box;
+    width: 100%;
+    background-color: #fff;
+}
+.column_box a{
+    display: block;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #888;
+}
+.column_box a:first-child{
+    border-left: none;
+}
+.column_box a.on{
+    border-bottom: 2px solid #0099CC;
+    color: #0099CC;
+}
