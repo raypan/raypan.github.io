@@ -115,15 +115,27 @@ ul {
 .nickname{
     font-size: 17px;
 }
-.label{
-    padding: 2px;
-    color: #fff;
+.title i{
+    display: inline-block;
+    width: 42px;
+    height: 17px;
+    background-size: 42px 17px;
+    -webkit-background-size: 42px 17px;
 }
-.green{
-    background-color: #00CC66;
+.icon_ic_1a{
+    background: url(../images/ic_1a@2x.png) no-repeat;
 }
-.lightgreen{
-    background-color: #00FF66;
+.icon_ic_2a{
+    background: url(../images/ic_2a@2x.png) no-repeat;
+}
+.icon_ic_3a{
+    background: url(../images/ic_3a@2x.png) no-repeat;
+}
+.icon_ic_4a{
+    background: url(../images/ic_4a@2x.png) no-repeat;
+}
+.icon_ic_5a{
+    background: url(../images/ic_5a@2x.png) no-repeat;
 }
 .content_box .title a{
     color: #0099CC;
@@ -298,9 +310,9 @@ ul {
     -webkit-border-radius: 3px;
 }
 .blur {
-    z-index: -2;
     position: absolute;
     width: 100%;
+    opacity: 0;
 }
 .blur_canvas{
     z-index: -1;

@@ -33,7 +33,7 @@
             <div class="content_box">
                 <div class="title oh">
                     <span class="highlight nickname">Angelababy</span>
-                    <span class="label green">教</span><span class="label lightgreen">1A</span>
+                    <i class="icon_ic_1a cell"></i>
                     <a class="right" href="">+关注</a>
                 </div>
                 <p>2小时前</p>
@@ -142,14 +142,18 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="../js/zepto.js"></script>
     <script type="text/javascript" src="../js/StackBlur.js"></script>
 
     <script type="text/javascript">
-        var canvas = document.getElementById("canvas"),
+        // 毛玻璃
+        var canvas = $("canvas"),
             blur = document.getElementById("blur");
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerWidth * (blur.height / blur.width);
-        stackBlurImage('blur', 'canvas', 6, false);
+        blur.onload = function () {
+            stackBlurImage('blur', 'canvas', 6, false);
+            canvas.css("width", "100%!important");
+            canvas.css("height", window.innerWidth * (blur.height / blur.width)+"px!important");
+        };
 
         // 推荐、热门栏
         var fixedColumn = document.getElementById("fixedColumn"),
