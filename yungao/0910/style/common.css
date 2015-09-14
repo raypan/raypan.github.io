@@ -141,6 +141,7 @@ ul {
     background: url(../images/ic_5a@2x.png) no-repeat;
 }
 .content_box .title a{
+    top: 0;
     color: #0099CC;
     font-size: 15px;
     padding: 3px;
