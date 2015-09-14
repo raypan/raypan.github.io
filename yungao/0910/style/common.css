@@ -115,10 +115,10 @@ ul {
 .nickname{
     font-size: 16px;
 }
-.title{
+.content_box .title{
     height: 45px;
 }
-.title i{
+.content_box .title i{
     display: inline-block;
     width: 42px;
     height: 17px;
