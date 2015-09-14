@@ -91,15 +91,15 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     background-size: 45px 45px;
     -webkit-background-size: 45px;
 }
 .content_box{
-    padding-left: 40px;
+    padding-left: 45px;
     font-size: 14px;
     color: #cccccc;
 }
@@ -107,13 +107,16 @@ ul {
     margin: 5px 0;
 }
 .highlight{
-    color: #006699;
+    color: #006699 !important;
 }
 .right{
     float: right;
 }
 .nickname{
-    font-size: 17px;
+    font-size: 16px;
+}
+.title{
+    height: 45px;
 }
 .title i{
     display: inline-block;
