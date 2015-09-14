@@ -12,7 +12,7 @@
         <a href="">热门</a>
     </div>
     <div class="topic">
-        <img id="blur" src="../images/baby2.png" class="blur" />
+        <img id="blur" class="blur" />
         <canvas id="canvas" class="blur_canvas"></canvas>
         <div class="topic_box">
             <img src="../images/baby2.png" alt=""/>
@@ -154,6 +154,7 @@
             canvas.css("width", "100%!important");
             canvas.css("height", window.innerWidth * (blur.height / blur.width)+"px!important");
         };
+        blur.src = "../images/baby2.png";
 
         // 推荐、热门栏
         var fixedColumn = document.getElementById("fixedColumn"),
