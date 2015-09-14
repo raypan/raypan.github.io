@@ -10,6 +10,9 @@
 body{
     font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+html, body {
+    height: 100%;
+}
 i {
     display: inline-block;
 }
@@ -23,8 +26,10 @@ ul {
     overflow: hidden;
 }
 .download_box{
+    width: 100%;
     background-color: #eef1fa;
-    padding: 10px;
+    padding: 10px 0;
+    height: 45px;
 }
 .cell{
     display: table-cell;
@@ -54,15 +59,21 @@ ul {
 }
 .download_box .left{
     display: inline-block;
+    margin-left: 10px;
 }
 .download_box .right{
-    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
+
 .download_btn{
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
     color: #fff;
     font-size: 15px;
     background-color: #ff6d00;
-    padding: 10px;
+    padding: 0 10px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
  }
@@ -90,7 +101,7 @@ ul {
 .content_box{
     padding-left: 40px;
     font-size: 14px;
-    color: gray;
+    color: #cccccc;
 }
 .content_box p{
     margin: 5px 0;
@@ -152,8 +163,7 @@ ul {
     -webkit-border-radius: 3px;
     border: solid #ddd 1px;
     width: 70px;
-    height: 30px;
-    line-height: 30px;
+    padding: 5px 0;
     text-align: center;
 }
 .icon_like{
@@ -176,6 +186,7 @@ ul {
     -webkit-background-size: 15px 15px !important;
 }
 .option_box li .num{
+    display: inline-block;
     font-size: 15px;
 }
 .on .num{
@@ -242,13 +253,13 @@ ul {
     color: #000000;
 }
 .big_btn{
-    padding: 10px;
+    padding: 30px 10px;
 }
 .big_btn a{
     display: inline-block;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     background-color: #FF6600;
     color: #fff;
     font-size: 16px;
@@ -258,6 +269,7 @@ ul {
 }
 .topic{
     overflow: hidden;
+    width: 100%;
 }
 .topic_box{
     position: relative;
@@ -286,13 +298,13 @@ ul {
     -webkit-border-radius: 3px;
 }
 .blur {
-    z-index: -1;
+    z-index: -2;
     position: absolute;
     width: 100%;
-    -webkit-filter: blur(6px); /* Chrome, Opera */
-    -moz-filter: blur(6px);
-    -ms-filter: blur(6px);
-    filter: blur(6px);
+}
+.blur_canvas{
+    z-index: -1;
+    position: absolute;
 }
 .column_box{
     display: box;
@@ -317,4 +329,19 @@ ul {
 .column_box a.on{
     border-bottom: 2px solid #0099CC;
     color: #0099CC;
+}
+.fixed_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.fixed_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+.blank{
+    height: 65px;
 }

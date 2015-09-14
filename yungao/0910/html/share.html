@@ -7,8 +7,13 @@
     <link rel="stylesheet" type="text/css" href="../style/common.css"/>
 </head>
 <body>
+    <div id="fixedColumn" class="column_box fixed_top" style="visibility: hidden;">
+        <a href="" class="on">推荐</a>
+        <a href="">热门</a>
+    </div>
     <div class="topic">
-        <img src="../images/baby2.png" class="blur" />
+        <img id="blur" src="../images/baby2.png" class="blur" />
+        <canvas id="canvas" class="blur_canvas"></canvas>
         <div class="topic_box">
             <img src="../images/baby2.png" alt=""/>
             <div class="content">
@@ -18,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="column_box">
+    <div id="column" class="column_box">
         <a href="" class="on">推荐</a>
         <a href="">热门</a>
     </div>
@@ -50,16 +55,16 @@
                 <p class="source">来自足迹 · 7月15日下场 · 94杆</p>
                 <ul class="option_box oh">
                     <li>
-                        <i class="icon_comment"></i>
-                        <span class="num">10</span>
+                        <i class="icon_comment cell"></i>
+                        <span class="num cell">10</span>
                     </li>
                     <li>
-                        <i class="icon_share"></i>
-                        <span class="num">10</span>
+                        <i class="icon_share cell"></i>
+                        <span class="num cell">10</span>
                     </li>
                     <li class="on"> <!-- on类 控制高亮 -->
-                        <i class="icon_like"></i>
-                        <span class="num">10</span>
+                        <i class="icon_like cell"></i>
+                        <span class="num cell">10</span>
                     </li>
                 </ul>
                 <div class="extra_box">
@@ -114,7 +119,8 @@
             </div>
         </li>
     </ul>
-    <div class="download_box oh">
+    <div class="blank"></div>
+    <div class="download_box oh fixed_bottom">
         <div class="left">
             <div class="cell">
                 <i class="yg_logo"></i>
@@ -135,5 +141,27 @@
             <a class="download_btn" href="">免费下载</a>
         </div>
     </div>
+
+    <script type="text/javascript" src="../js/StackBlur.js"></script>
+
+    <script type="text/javascript">
+        var canvas = document.getElementById("canvas"),
+            blur = document.getElementById("blur");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerWidth * (blur.height / blur.width);
+        stackBlurImage('blur', 'canvas', 6, false);
+
+        // 推荐、热门栏
+        var fixedColumn = document.getElementById("fixedColumn"),
+            _offset = document.getElementById("column").offsetTop;
+        document.onscroll = function () {
+            var _top = document.body.scrollTop;
+            if(_top < _offset){
+                fixedColumn.style.visibility = "hidden";
+            } else {
+                fixedColumn.style.visibility = "visible";
+            }
+        }
+    </script>
 </body>
 </html>
